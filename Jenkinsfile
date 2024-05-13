@@ -10,6 +10,7 @@ pipeline {
             }
             steps {
                 // Build steps here
+				echo ' build done '
             }
         }
         stage('Test') {
@@ -18,6 +19,7 @@ pipeline {
             }
             steps {
                 // Test steps here
+				echo 'test done'
             }
         }
         stage('Deploy') {
@@ -26,6 +28,7 @@ pipeline {
             }
             steps {
                 // Deployment steps here
+				echo 'deployment done'
             }
         }
     }
